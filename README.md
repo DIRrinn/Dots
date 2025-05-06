@@ -1,4 +1,7 @@
 # Config's paths
+
+All of them needs to be in home directory
+
 - i3:   `~/.config/i3/config`
 
 - i3lock-color: `~/i3lock-color/lock.sh`
