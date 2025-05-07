@@ -29,3 +29,5 @@ To change this image just change path here.
 # Feh background
 exec --no-startup-id "feh --bg-fill ~/Изображения/citadel.jpg"
 ```
+___
+P.S. `lenin.txt` is an ASCII art for Neofetch.
