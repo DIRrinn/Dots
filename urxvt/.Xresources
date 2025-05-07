@@ -1,40 +1,43 @@
+#define FOREGROUND #ebd4ae
+#define BACKGROUND #191817
+#define COLOR0 #191817
+#define COLOR8 #8da691
+#define COLOR1 #f06b54
+#define COLOR9 #f5986a
+#define COLOR2 #bbbb88
+#define COLOR10 #8dccb1
+#define COLOR3 #ff7d5e
+#define COLOR11 #eedd99
+#define COLOR4 #e0ba69
+#define COLOR12 #64b5a1
+#define COLOR5 #819a9c
+#define COLOR13 #ffcbab
+#define COLOR6 #d14b30
+#define COLOR14 #c25431
+#define COLOR7 #58666f
+#define COLOR15 #f9f1ed
+
+
 ! special
-*.foreground:   #ffffff
-*.background:   #191817
-*.cursorColor:  #ffffff
-
-! black
-*.color0:       #537b5d
-*.color8:       #8da691
-
-! red
-*.color1:       #f06b54
-*.color9:       #f5986a
-
-! green
-*.color2:       #bbbb88
-*.color10:      #8dccb1
-
-! yellow
-*.color3:       #ff7d5e
-*.color11:      #eedd99
-
-! blue
-*.color4:       #e0ba69
-*.color12:      #4fa590
-
-! magenta
-*.color5:       #709092
-*.color13:      #ffcbab
-
-! cyan
-*.color6:       #d13516
-*.color14:      #c25431
-
-! white
-*.color7:       #58666f
-*.color15:      #f9f1ed
-
+*.foreground:   FOREGROUND
+*.background:   BACKGROUND
+*.cursorColor:  FOREGROUND
+*.color0:       COLOR0
+*.color8:       COLOR8
+*.color1:       COLOR1
+*.color9:       COLOR9
+*.color2:       COLOR2
+*.color10:      COLOR10
+*.color3:       COLOR3
+*.color11:      COLOR11
+*.color4:       COLOR4
+*.color12:      COLOR12
+*.color5:       COLOR5
+*.color13:      COLOR13
+*.color6:       COLOR6
+*.color14:      COLOR14
+*.color7:       COLOR7
+*.color15:      COLOR15
 
 
 !! Fonts
@@ -46,7 +49,9 @@ Xft.hinting:    true
 Xft.hintstyle:  hintslight
 
 !! URxvt Appearance
-URxvt*font: xft:DejaVuSansMono:pixelsize=12
+!URxvt*font: xft:DejaVuSansMono:pixelsize=12
+! FiraCore needs for Nerdfont icons
+URxvt*font: xft:FiraCodeNerdFontMono:pixelsize=12
 URxvt.geometry: 102x32
 URxvt.internalBorder: 24
 URxvt.letterSpace: 0
