@@ -2,8 +2,8 @@
 
 BLANK='#00000000'
 CLEAR='#ffffff22'
-DEFAULT='#ff6a00'
-TEXT='#ff6a00'
+DEFAULT='#f09e3a'
+TEXT='#ebebeb'
 WRONG='#f21000'
 VERIFYING='#2ee8b7'
 
