@@ -32,7 +32,8 @@ call plug#begin('~/.vim/plugged')
 	Plug 'preservim/nerdtree'
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
-    Plug 'ryanoasis/vim-devicons'
+	Plug 'ryanoasis/vim-devicons'
+	Plug 'wakatime/vim-wakatime'
 
 call plug#end()
 
@@ -43,7 +44,6 @@ let g:airline_section_z = "\ue0a1:%l/%L Col:%c"
 let g:Powerline_symbols='unicode'
 let g:airline#extensions#xkblayout#enabled = 0
 let g:airline_theme='distinguished'
-
 
 " NERDTree config
 "autocmd vimenter * NERDTree " Старт nerdtree при запуске vim
@@ -56,5 +56,3 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
    " Highlighting
 hi Comment ctermfg=65
 "hi Identifier term=underline ctermfg=4
-hi Type ctermfg=67
-hi PreProc ctermfg=173
