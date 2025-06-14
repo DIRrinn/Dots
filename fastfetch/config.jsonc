@@ -1,0 +1,41 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "logo": {
+      "type": "sixel", // because foot terminal is working only with it
+      "source": "~/Images/gman_dark.jpg",
+      "width": 35,
+      "padding": {
+          "top": 1,
+          "left": 1,
+          "right": 2
+      }
+  },
+  "display": {
+      "separator": " "
+  },
+
+  "modules": [
+    "break",
+    "break",
+    "title",
+    "separator",
+    "datetime",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "wm",
+    "terminal",
+    "cpu",
+    "gpu",
+    "memory",
+    "swap",
+    "disk",
+    "colors"
+  ]
+
+  }
