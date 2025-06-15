@@ -12,7 +12,6 @@ All of them needs to be in home directory
 - rofi
 - feh
 - PulseAudio
-- Cava
 ### Wayland
 - SDDM
 - Sway
