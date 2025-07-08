@@ -9,7 +9,7 @@
     light yellow: #f9e2af
 */
 
-window#waybar {
+#waybar {
 	background: #1d2021;
 }
 
@@ -20,10 +20,16 @@ window#waybar {
 
 #workspaces button {
     color: #414141;
+    border-radius: 0;
 }
 
 #workspaces button.focused {
     color: #f9e2af;
+}
+#workspaces button:hover {
+    background: transparent;
+    box-shadow: inherit;
+    text-shadow: inherit;
 }
 
 #language {
@@ -31,32 +37,12 @@ window#waybar {
     padding-left: 13px
 }
 
-*#tags {
-	font-size: 12px;
-	margin-bottom: 0px;
-	background: rgba(0, 0, 0, 0.8);
-}
-
-#tags button {
-	color: #A6E3A1;
-	background: transparent;
-}
-
-#tags button.occupied {
-	color: #F38BA8;
-	background: transparent;
-}
-
-#tags button.focused {
-    background-color: #F38BA8;
-    border-radius: 0px;
-}
-
 #network {
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
 	background: #f9e2af;
+    /*border-radius: 5px;*/
 }
 
 #pulseaudio {
@@ -97,8 +83,7 @@ window#waybar {
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	color: #000000;
-	background: #89B4FA;
+	background: #f9e2af;
 }
 
 #clock {
@@ -183,4 +168,8 @@ window#waybar {
 	padding-right: 10px;
 	transition: none;
 	background: #89B4FA;
+}
+
+#custom-uptime {
+    color: #f9e2af
 }
