@@ -20,6 +20,7 @@ All of them needs to be in home directory
 - waybar
 - Cava
 - Hyprlock
+- Hypridle
 
 **X packages can also be running on Wayland using Xwayland**
 ___
