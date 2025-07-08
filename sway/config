@@ -17,7 +17,7 @@ set $color0 #ffc552
 set $color1 #5c7080
 set $color15 #b6b8ba
 set $color2 #3a3c3d
-set $menu bemenu-run -b -n --nb="$color2" --nf="$color15" --sb="$color1" --sf="$color15" --tb="$color1" --tf="$color15" --hb="$color15" --hf="$color2" --ab="$color2" -p "What's now, sir?"
+set $menu rofi -show drun
 
 ### Output configuration
 
@@ -25,7 +25,7 @@ set $menu bemenu-run -b -n --nb="$color2" --nf="$color15" --sb="$color1" --sf="$
 exec swaybg -i /home/richard/Images/citadel.jpg
 
 # Network connection
-exec iwctl station wlan0 connect TP-LINK_6A96
+exec iwctl station wlan0 connect realme
 
 # Waybar
 
@@ -36,9 +36,9 @@ exec waybar
 # Example configuration:
 
  exec swayidle -w \
-          timeout 300 'swaylock -f -c 000000' \
-          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-          before-sleep 'swaylock -f -c 000000'
+          timeout 600 'hyprlock' \
+          timeout 900 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+          before-sleep 'hyprlock'
 
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -236,4 +236,4 @@ client.focused $color0 $color0 $color0 $color0 $color0
 default_border pixel 2
 default_floating_border pixel 2
 
-#
+#include /etc/sway/config.d/*
