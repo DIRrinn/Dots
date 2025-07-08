@@ -4,7 +4,7 @@ time=$(date +"%H")
 
 if [ $time -ge 00 ] && [ $time -le 05 ]
 then
-    echo "It's late. Why are you still up?"
+    echo "You've worked hard. Have a good night"
 elif [ $time -ge 06 ] && [ $time -le 10 ]
 then
     echo "Rise and shine, Richard."
