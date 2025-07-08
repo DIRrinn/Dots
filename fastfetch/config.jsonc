@@ -27,7 +27,7 @@
         {
             "type": "custom",
             "key": "Info",
-            "format": "Richard Stein is a scientific dummy!"
+            "format": "Yeah, science!"
         },
         "os",
         "host",
