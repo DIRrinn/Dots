@@ -13,6 +13,7 @@ set $right l
 set $term foot
 # Your preferred application launcher
 
+set $blank #ffffff00
 set $color0 #ffc552
 set $color1 #5c7080
 set $color15 #b6b8ba
@@ -223,6 +224,7 @@ bindsym $mod+r mode "resize"
 gaps inner 4
 
 client.focused $color0 $color0 $color0 $color0 $color0
+client.unfocused $blank $blank $blank $blank $blank
 
 # Border
 default_border pixel 2
