@@ -20,16 +20,52 @@
     "modules": [
         "break",
         "break",
-        "title",
-        "separator",
-        "datetime",
-        "separator",
-       
+
+        {
+            "type": "title",
+            "key": " "
+        },
+
         {
             "type": "custom",
-            "key": "Info",
+            "format": "\u001b[90m─────────────────────⊣"
+        },
+
+        {
+            "type": "datetime",
+            "key": "⏲"
+        },
+
+        {
+            "type": "custom",
+            "format": "\u001b[90m┌──────────────────────Info─────────────────────────┐"
+        },
+
+        {
+            "type": "custom",
+            "key": "                 ☣",
+            "format": "Richard Stein"
+        },
+        {
+            "type": "custom",
+            "key": "                   Science Team",
+            "format": ""
+        },
+        "break",
+
+        {
+            "type": "custom",
+            "key": "〉",
             "format": "The right man in the wrong place can make all the difference in the world."
         },
+
+        {
+            "type": "custom",
+            "key": " ",
+            "format": "\u001b[90m┌──────────────────────Equipment─────────────────────────┐"
+        },
+
+        "break",
         "os",
         "host",
         "kernel",
@@ -40,9 +76,23 @@
         "terminal",
         "cpu",
         "disk",
-        "media",
-        "colors",
-        "break"
+
+        {
+            "type": "media",
+            "key": "⯈"
+        },
+
+        {
+            "type": "custom",
+            "format": "\u001b[90m└────────────────────────────────────────────────────────┘"
+        },
+
+        {
+            "type": "colors",
+            "paddingLeft": 2,
+            "symbol": "circle"
+        }
+
     ]
 
 }
