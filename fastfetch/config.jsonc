@@ -22,21 +22,6 @@
         "break",
 
         {
-            "type": "title",
-            "key": " "
-        },
-
-        {
-            "type": "custom",
-            "format": "\u001b[90m─────────────────────⊣"
-        },
-
-        {
-            "type": "datetime",
-            "key": "⏲"
-        },
-
-        {
             "type": "custom",
             "format": "\u001b[90m┌──────────────────────Info─────────────────────────┐"
         },
@@ -46,11 +31,13 @@
             "key": "                 ☣",
             "format": "Richard Stein"
         },
+
         {
             "type": "custom",
             "key": "                   Science Team",
             "format": ""
         },
+
         "break",
 
         {
@@ -59,10 +46,26 @@
             "format": "The right man in the wrong place can make all the difference in the world."
         },
 
+        "break",
+
+        {
+            "type": "command",
+            "key": " ",
+            "text": "printf '⏰%s %s                 ➟ %s@%s' $(date +%H:%M:%S) $(date +%Y-%m-%d) $(whoami) $(hostnamectl hostname)",
+            "format": "{##13c299} {result}"
+        },
+
         {
             "type": "custom",
             "key": " ",
-            "format": "\u001b[90m┌──────────────────────Equipment─────────────────────────┐"
+            "format": "\u001b[90m└───────────────────────────────────────────────────┘"
+        },
+
+
+        {
+            "type": "custom",
+            "key": " ",
+            "format": "\u001b[90m┌────────────────────Equipment──────────────────────┐"
         },
 
         "break",
@@ -84,7 +87,7 @@
 
         {
             "type": "custom",
-            "format": "\u001b[90m└────────────────────────────────────────────────────────┘"
+            "format": "\u001b[90m└───────────────────────────────────────────────────┘"
         },
 
         {
