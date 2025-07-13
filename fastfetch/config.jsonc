@@ -4,7 +4,7 @@
     "logo": {
       //Use chafa for out.sixel >>   chafa -s WxH path/to/image > out.sixel
       "type": "raw",
-      "source": "out.sixel",
+      "source": "/home/$USER/out.sixel",
       "width": 35,
       "padding": {
           "top": 2,
@@ -42,7 +42,7 @@
 
         {
             "type": "custom",
-            "key": "〉",
+            "key": " 〉",
             "format": "The right man in the wrong place can make all the difference in the world."
         },
 
@@ -51,7 +51,7 @@
         {
             "type": "command",
             "key": " ",
-            "text": "printf '⏰%s %s                 ➟ %s@%s' $(date +%H:%M:%S) $(date +%Y-%m-%d) $(whoami) $(hostnamectl hostname)",
+            "text": "printf '\uf017 %s %s                 ➟ %s@%s' $(date +%H:%M:%S) $(date +%Y-%m-%d) $(whoami) $(hostnamectl hostname)",
             "format": "{##13c299} {result}"
         },
 
@@ -69,7 +69,12 @@
         },
 
         "break",
-        "os",
+
+        {
+            "type": "os",
+            "key": "OS \udb82\udcc7"  // https://www.nerdfonts.com/cheat-sheet
+        },
+
         "host",
         "kernel",
         "uptime",
