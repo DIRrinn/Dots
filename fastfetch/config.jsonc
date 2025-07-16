@@ -42,8 +42,8 @@
 
         {
             "type": "custom",
-            "key": " 〉",
-            "format": "The right man in the wrong place can make all the difference in the world."
+            "key": " \udb80\udd42",
+            "format": "Working to make a better tomorrow for all mankind."
         },
 
         "break",
@@ -75,8 +75,16 @@
             "key": "OS \udb82\udcc7"  // https://www.nerdfonts.com/cheat-sheet
         },
 
-        "host",
-        "kernel",
+        {
+            "type": "host",
+            "key": "Machine"
+        },
+
+        {
+            "type": "kernel",
+            "key": "Kernel"
+        },
+
         "uptime",
         "packages",
         "shell",
@@ -95,10 +103,17 @@
             "format": "\u001b[90m└───────────────────────────────────────────────────┘"
         },
 
+        /*
         {
             "type": "colors",
             "paddingLeft": 2,
             "symbol": "circle"
+        },
+        */
+
+        {
+            "type": "custom",
+            "format": "                      \u001b[90m\udb80\udca9 Black Mesa Research Facility"
         }
 
     ]
