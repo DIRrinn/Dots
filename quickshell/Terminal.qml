@@ -65,6 +65,9 @@ ShellRoot{
                     output.text = "";
                     clear();
                 }
+                else if(text == "exit"){
+                    Qt.quit()
+                }
                 else {
                     (this.command = text);
                     commandTyped();
