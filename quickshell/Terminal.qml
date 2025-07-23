@@ -3,18 +3,21 @@ import QtQuick
 import Quickshell.Wayland
 import QtQuick.Controls
 import Quickshell.Io
+import Quickshell.I3
 
 ShellRoot{
-    Variants {
-      model: Quickshell.screens;
 
+    Variants {
+        model: Quickshell.screens;
       
       PanelWindow {
         id: terminal
         property var modelData
         screen: modelData
 
-        WlrLayershell.layer: WlrLayer.Overlay
+        WlrLayershell.layer: WlrLayer.Top
+        WlrLayershell.namespace: "quickshell"
+        WlrLayershell.keyboardFocus: WlrKeyboardFocus.OnDemand
 
         focusable: true
 
@@ -57,7 +60,7 @@ ShellRoot{
                     output.visible = !output.visible;
                     clear();
                 }
-                if(text == "clear"){
+                else if(text == "clear"){
                     output.text = "";
                     clear();
                 }
@@ -75,19 +78,20 @@ ShellRoot{
         PopupWindow {
             id: output
             property string text
-            property var modelData
 
             anchor.window: terminal
             anchor.rect.y: -height
 
             visible: false
 
+            text: I3.socketPath
 
             color: "transparent"
 
             implicitHeight: 500
             implicitWidth: screen.width
             Rectangle {
+
                 ScrollView {
                     anchors.fill: parent
                 Text {
