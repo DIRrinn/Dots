@@ -58,6 +58,7 @@ ShellRoot{
             onAccepted: {
                 if(text == "tog"){
                     output.visible = !output.visible;
+                    rect.visible = !rect.visible;
                     clear();
                 }
                 else if(text == "clear"){
@@ -83,6 +84,7 @@ ShellRoot{
             anchor.rect.y: -height
 
             visible: false
+            FadeBehavior on visible {}
 
             text: I3.socketPath
 
@@ -91,6 +93,7 @@ ShellRoot{
             implicitHeight: 500
             implicitWidth: screen.width
             Rectangle {
+                id: rect
 
                 ScrollView {
                     anchors.fill: parent
@@ -106,7 +109,9 @@ ShellRoot{
                 opacity: 0.5
                 border.width: 4
                 border.color: "blue"
+                visible: true
                 color: "black"
+                FadeBehavior on visible {}
             }
         }
       }
