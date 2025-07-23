@@ -1,3 +1,9 @@
+
+
+@define-color grey_blue         #969ba3;
+@define-color light_yellow      #f9e2af;
+@define-color dark_grey         #1d2021;
+
 * {
 	border: none;
     font-family: "JetBrainsMono Nerd Font Mono" ;
@@ -5,17 +11,13 @@
 	min-height: 0px;
 }
 
-/*  grey blue: #969ba3
-    light yellow: #f9e2af
-*/
-
 #waybar {
-	background: #1d2021;
+	background: @dark_grey;
 }
 
 #window {
-    color: #f9e2af;
-	background: #1d2021;
+    color: @light_yellow;
+	background: @dark_grey;
 }
 
 #workspaces button {
@@ -24,7 +26,7 @@
 }
 
 #workspaces button.focused {
-    color: #f9e2af;
+    color: @light_yellow;
 }
 #workspaces button:hover {
     background: transparent;
@@ -33,7 +35,7 @@
 }
 
 #language {
-    color: #f9e2af;
+    color: @light_yellow;
     padding-left: 13px
 }
 
@@ -41,7 +43,7 @@
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	background: #f9e2af;
+	background: @light_yellow;
     /*border-radius: 5px;*/
 }
 
@@ -83,7 +85,7 @@
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	background: #f9e2af;
+	background: @light_yellow;
 }
 
 #clock {
@@ -91,7 +93,7 @@
 	padding-left: 10px;
 	padding-right: 10px;
 	background: transparent;
-    color: #f9e2af
+    color: @light_yellow
 }
 
 #calendar {
@@ -108,7 +110,7 @@
 	padding-left: 10px;
 	padding-right: 10px;
 	transition: none;
-	background: #f9e2af;
+	background: @light_yellow;
 }
 
 #cpu {
@@ -116,7 +118,7 @@
 	padding-left: 10px;
 	padding-right: 10px;
 	transition: none;
-	background: #f9e2af;
+	background: @light_yellow;
 }
 
 #tray {
@@ -171,5 +173,5 @@
 }
 
 #custom-uptime {
-    color: #f9e2af
+    color: @light_yellow
 }
