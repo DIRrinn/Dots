@@ -57,8 +57,8 @@ ShellRoot{
 
             onAccepted: {
                 if(text == "tog"){
-                    output.visible = !output.visible;
                     rect.visible = !rect.visible;
+                    output.visible = !output.visible;
                     clear();
                 }
                 else if(text == "clear"){
@@ -83,12 +83,12 @@ ShellRoot{
             anchor.window: terminal
             anchor.rect.y: -height
 
-            visible: false
-            FadeBehavior on visible {}
+            visible: true
 
             text: I3.socketPath
 
-            color: "transparent"
+            color: "transparent"//"transparent"
+            FadeBehavior on visible {}
 
             implicitHeight: 500
             implicitWidth: screen.width
