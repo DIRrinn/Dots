@@ -5,6 +5,8 @@ import QtQuick
 Behavior {
     id: root
     property Item fadeTarget: targetProperty.object
+    property real startFadeTarget: fadeTarget.opacity
+
     SequentialAnimation {
         NumberAnimation {
             target: root.fadeTarget
@@ -16,7 +18,7 @@ Behavior {
         NumberAnimation {
             target: root.fadeTarget
             property: "opacity"
-            to: fadeTarget.opacity
+            to: startFadeTarget //fadeTarget.opacity
             easing.type: Easing.OutQuad
         }
     }
