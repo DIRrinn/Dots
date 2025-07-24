@@ -14,7 +14,10 @@
       
     },
     "display": {
-      "separator": " "
+      "separator": " ",
+      "color": {
+          "keys": "cyan"
+      }
     },
 
     "modules": [
@@ -72,30 +75,57 @@
 
         {
             "type": "os",
-            "key": "OS \udb82\udcc7"  // https://www.nerdfonts.com/cheat-sheet
+            "key": " OS \udb82\udcc7"  // https://www.nerdfonts.com/cheat-sheet
         },
 
         {
             "type": "host",
-            "key": "Machine"
+            "key": " Machine"
         },
 
         {
             "type": "kernel",
-            "key": "Kernel"
+            "key": " Kernel"
         },
 
-        "uptime",
-        "packages",
-        "shell",
-        "wm",
-        "terminal",
-        "cpu",
-        "disk",
+        {
+            "type": "uptime",
+            "key": " Up"
+        },
+
+        {
+            "type": "packages",
+            "key": " Packages"
+        },
+
+        {
+            "type": "shell",
+            "key": " Shell"
+        },
+
+        {
+            "type": "wm",
+            "key": " WM"
+        },
+
+        {
+            "type": "terminal",
+            "key": " Terminal"
+        },
+
+        {
+            "type": "cpu",
+            "key": " CPU"
+        },
+
+        {
+            "type": "disk",
+            "key": " Disk"
+        },
 
         {
             "type": "media",
-            "key": "⯈"
+            "key": " ⯈"
         },
 
         {
