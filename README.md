@@ -21,6 +21,7 @@ All of them needs to be in home directory
 - Cava
 - Hyprlock
 - Hypridle
+- Quickshell
 
 **X packages can also be running on Wayland using Xwayland**
 ___
