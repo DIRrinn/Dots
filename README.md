@@ -1,8 +1,8 @@
 # Config's paths
 
-All of them needs to be in home directory
+*Almost* all of them needs to be in home directory
 
-# Dependencies
+# Packages
 ### X11
 - i3wm
 - brightnessctl
