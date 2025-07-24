@@ -1,18 +1,27 @@
-
-
+/*
+            COLORS
+*/
 @define-color grey_blue         #969ba3;
 @define-color light_yellow      #f9e2af;
 @define-color dark_grey         #1d2021;
 @define-color light_blue        #5e86eb;
 @define-color white             #ffffff;
+@define-color white_blue        #dde2eb;
 @define-color black_blue        #020305;
 @define-color dark_blue         #0f1c3b;
 @define-color blue              #0b2259;
 
+/*
+          VARIABLES
+*/
+@define-color exclsv           alpha(@white_blue, 0.9);
+@define-color default          @light_blue;
+
 * {
 	border: 0px;
     border-radius: 0;
-    font-family: "Impact" ;
+    font-family: "Trebuchet MS" ;
+    font-weight: bold;
 	font-size: 12px;
 	min-height: 10px;
 }
@@ -20,31 +29,37 @@
 window#waybar {
     margin: 2px;
     border-radius: 8px;
-    background: @black_blue;
+    background: transparent;
     /*border: 2px solid @black_blue;
     background: alpha(@light_blue, 0.7);*/
 }
 
 
 #window {
-    color: @white;
+    color: @exclsv;
 	background: transparent;
+    margin-right: 14px;
 }
 
 .modules-left {
-    border-radius:0px;
+    border-radius:3px;
     border: 0px solid @black_blue;
+    background: alpha(@black_blue, 0.0);
+}
+.modules-right {
+    border-radius: 3px;
+    border: 0px;
     background: alpha(@black_blue, 0.7);
 }
 
 #workspaces button {
     padding: 5px;
-    color: @blue;
+    color: @default;
     border-radius: 0;
 }
 
 #workspaces button.focused {
-    color: @white;
+    color: @exclsv;
 }
 #workspaces button:hover {
     background: transparent;
@@ -53,12 +68,12 @@ window#waybar {
 }
 
 #language {
-    color: @white;
+    color: @exclsv;
     padding-left: 13px;
 }
 
 #network {
-    color: @blue;
+    color: @default;
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -67,7 +82,7 @@ window#waybar {
 }
 
 #pulseaudio {
-    color: @blue;
+    color: @default;
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -103,7 +118,7 @@ window#waybar {
 }
 
 #backlight {
-    color: @blue;
+    color: @default;
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -115,7 +130,7 @@ window#waybar {
 	padding-left: 10px;
 	padding-right: 10px;
 	background: transparent;
-    color: @white
+    color: @exclsv
 }
 
 #calendar {
@@ -128,7 +143,7 @@ window#waybar {
 }
 
 #memory {
-    color: @blue;
+    color: @default;
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -137,12 +152,12 @@ window#waybar {
 }
 
 #cpu {
-    color: @blue;
+    color: @default;
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
 	transition: none;
-	background: @transparent;
+	background: transparent;
 }
 
 #tray {
