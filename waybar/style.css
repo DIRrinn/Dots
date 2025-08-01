@@ -1,32 +1,66 @@
-
-
+/*
+            COLORS
+*/
 @define-color grey_blue         #969ba3;
 @define-color light_yellow      #f9e2af;
 @define-color dark_grey         #1d2021;
+@define-color light_blue        #5e86eb;
+@define-color white             #ffffff;
+@define-color white_blue        #dde2eb;
+@define-color black_blue        #020305;
+@define-color dark_blue         #0f1c3b;
+@define-color blue              #0b2259;
+
+/*
+          VARIABLES
+*/
+@define-color exclsv           alpha(@white_blue, 0.9);
+@define-color default          @light_blue;
+@define-color dark             @black_blue;
 
 * {
-	border: none;
-    font-family: "JetBrainsMono Nerd Font Mono" ;
-	font-size: 10px;
-	min-height: 0px;
+    border: 0px;
+    border-radius: 0;
+    font-family: "Trebuchet MS" ;
+    font-weight: bold;
+    font-size: 12px;
+    min-height: 10px;
 }
 
-#waybar {
-	background: @dark_grey;
+window#waybar {
+    margin: 2px;
+    border-radius: 8px;
+    background: transparent;
+    /*border: 2px solid @dark;
+    background: alpha(@light_blue, 0.7);*/
 }
+
 
 #window {
-    color: @light_yellow;
-	background: @dark_grey;
+    color: @exclsv;
+    background: transparent;
+    margin-right: 14px;
+}
+
+.modules-left {
+    border-radius:3px;
+    border: 0px;
+    background: transparent
+}
+.modules-right {
+    border-radius: 8px;
+    border: 0px;
+    background: alpha(@dark, 0.7);
 }
 
 #workspaces button {
-    color: #414141;
+    padding: 5px;
+    color: @default;
     border-radius: 0;
 }
 
 #workspaces button.focused {
-    color: @light_yellow;
+    color: @exclsv;
 }
 #workspaces button:hover {
     background: transparent;
@@ -35,143 +69,80 @@
 }
 
 #language {
-    color: @light_yellow;
-    padding-left: 13px
+    color: @exclsv;
+    padding-left: 13px;
 }
 
 #network {
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	background: @light_yellow;
-    /*border-radius: 5px;*/
+    color: @default;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: transparent;
 }
 
 #pulseaudio {
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	background: #f9e2af;
-}
-
-#battery {
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	background: #f9e2af;
-}
-
-#battery.charging, #battery.plugged {
-  background-color: #A6E3A1;
-}
-
-#battery.critical:not(.charging) {
-  background-color: #A6E3A1;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes blink {
-  to {
-    background-color: #BF616A;
-    color: #A6E3A1;
-  }
+    color: @default;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: transparent;
 }
 
 #backlight {
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	background: @light_yellow;
+    color: @default;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: transparent;
 }
 
 #clock {
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	background: transparent;
-    color: @light_yellow
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: transparent;
+    color: @exclsv
 }
 
 #calendar {
-  margin-left: 8px;
-  padding-left: 10px;
-  margin-bottom: 10px;
-  padding-right: 10px;
-  transition: none;
-  background: #BAC2DE;
+    margin-left: 8px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    background: @dark;
 }
 
 #memory {
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	transition: none;
-	background: @light_yellow;
+    color: @default;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: transparent;
 }
 
 #cpu {
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	transition: none;
-	background: @light_yellow;
+    color: @default;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: transparent;
 }
 
 #tray {
-	margin-left: 2px;
-	padding-left: 2px;
-	padding-right: 10px;
-	transition: none;
-	background: transparent;
-}
-
-#custom-launcher {
-	font-size: 14px;
-	padding-left: 10px;
-	padding-right: 5px;
-	transition: none;
-    color: #A36AC7;
-    background: rgba(0, 0, 0, 0.8);
-}
-
-#custom-power {
-	font-size: 14px;
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 5px;
-	transition: none;
-	color: #F38BA8;
-	background: rgba(0, 0, 0, 0.8);
-}
-
-#custom-wallpaper {
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	transition: none;
-	background: #C9CBFF;
-}
-
-#custom-updates {
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	transition: none;
-	background: #E8A2AF;
+    margin-left: 2px;
+    padding-left: 2px;
+    padding-right: 10px;
+    background: transparent;
 }
 
 #custom-media {
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	transition: none;
-	background: #89B4FA;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: transparent;
 }
 
 #custom-uptime {
-    color: @light_yellow
+    color: @exclsv
 }
