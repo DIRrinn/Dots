@@ -19,6 +19,7 @@
 - foot
 - waybar
 - Cava
+- Hyprland
 - Hyprlock
 - Hypridle
 - Quickshell
