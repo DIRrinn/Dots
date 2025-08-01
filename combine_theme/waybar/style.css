@@ -16,6 +16,7 @@
 */
 @define-color exclsv           alpha(@white_blue, 0.9);
 @define-color default          @light_blue;
+@define-color dark             @black_blue;
 
 * {
 	border: 0px;
@@ -30,7 +31,7 @@ window#waybar {
     margin: 2px;
     border-radius: 8px;
     background: transparent;
-    /*border: 2px solid @black_blue;
+    /*border: 2px solid @dark;
     background: alpha(@light_blue, 0.7);*/
 }
 
@@ -43,13 +44,13 @@ window#waybar {
 
 .modules-left {
     border-radius:3px;
-    border: 0px solid @black_blue;
-    background: alpha(@black_blue, 0.0);
+    border: 0px;
+    background: transparent
 }
 .modules-right {
-    border-radius: 3px;
+    border-radius: 8px;
     border: 0px;
-    background: alpha(@black_blue, 0.7);
+    background: alpha(@dark, 0.7);
 }
 
 #workspaces button {
@@ -78,7 +79,6 @@ window#waybar {
 	padding-left: 10px;
 	padding-right: 10px;
 	background: transparent;
-    /*border-radius: 5px;*/
 }
 
 #pulseaudio {
@@ -87,34 +87,6 @@ window#waybar {
 	padding-left: 10px;
 	padding-right: 10px;
 	background: transparent;
-}
-
-#battery {
-    border: 2px solid @dark_blue;
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	background: transparent;
-}
-
-#battery.charging, #battery.plugged {
-  background-color: #A6E3A1;
-}
-
-#battery.critical:not(.charging) {
-  background-color: #A6E3A1;
-  animation-name: blink;
-  animation-duration: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes blink {
-  to {
-    background-color: #BF616A;
-    color: #A6E3A1;
-  }
 }
 
 #backlight {
@@ -138,8 +110,7 @@ window#waybar {
   padding-left: 10px;
   margin-bottom: 10px;
   padding-right: 10px;
-  transition: none;
-  background: #BAC2DE;
+  background: @dark;
 }
 
 #memory {
@@ -147,7 +118,6 @@ window#waybar {
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	transition: none;
 	background: transparent;
 }
 
@@ -156,7 +126,6 @@ window#waybar {
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	transition: none;
 	background: transparent;
 }
 
@@ -164,53 +133,16 @@ window#waybar {
 	margin-left: 2px;
 	padding-left: 2px;
 	padding-right: 10px;
-	transition: none;
 	background: transparent;
-}
-
-#custom-launcher {
-	font-size: 14px;
-	padding-left: 10px;
-	padding-right: 5px;
-	transition: none;
-    color: #A36AC7;
-    background: rgba(0, 0, 0, 0.8);
-}
-
-#custom-power {
-	font-size: 14px;
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 5px;
-	transition: none;
-	color: #F38BA8;
-	background: rgba(0, 0, 0, 0.8);
-}
-
-#custom-wallpaper {
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	transition: none;
-	background: #C9CBFF;
-}
-
-#custom-updates {
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 10px;
-	transition: none;
-	background: #E8A2AF;
 }
 
 #custom-media {
 	margin-left: 8px;
 	padding-left: 10px;
 	padding-right: 10px;
-	transition: none;
-	background: #89B4FA;
+	background: transparent;
 }
 
 #custom-uptime {
-    color: @white
+    color: @exclsv
 }
