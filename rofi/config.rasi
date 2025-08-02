@@ -12,7 +12,6 @@ run-list-command: "";
 run-shell-command: "{terminal} -e {cmd}";
 window-command: "wmctrl -i -R {window}";
 window-match-fields: "all";
-icon-theme: "adwaita";
 drun-match-fields: "name,generic,exec,categories,keywords";
 drun-show-actions: false;
 drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
@@ -28,65 +27,9 @@ display-ssh: "ssh";
 display-drun: "󰣇 ";
 }
 
-* {
-  border: 0;
-  margin: 0;
-
-  bg: #222222;
-  fg: #ffffff;
-  red: #c43333;
-
-  background-color: transparent;
-}
-
-window {
-    background-color:   @bg;
-    border-color:       @fg;
-
-    location:   center;
-    width:      480px;
-    border:     0px;
-}
-
-inputbar {
-    padding:    0px 0px;
-    children:   [ prompt, entry ];
-}
-
-prompt {
-    text-color: @fg;
-}
-
-element {
-    padding:    3px;
-    spacing:    8px;
-}
-
-element selected normal {
-    background-color:   @red;
-}
-
-listview {
-  lines: 10;
-  fixed-height:   false;
-}
-
-prompt, entry, element-text, element-icon {
-    vertical-align: 0.5;
-    text-color: #ffffff;
-}
-
-element-text {
-    text-color: inherit;
-}
-
-element-icon {
-    size:   0.75em;
-}
-
-  timeout {
+timeout {
       action: "kb-cancel";
       delay:  0;
 }
 
-//@theme "/usr/local/share/rofi/themes/Arc-Dark.rasi"
+@theme "reality"
