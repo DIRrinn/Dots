@@ -53,6 +53,7 @@ listview {
 }
 
 element-text, element-icon {
+    highlight: none;
     vertical-align: 0.5;
     horizontal-align : 0.0;
     background-color: inherit;
