@@ -4,9 +4,7 @@
 
 # Packages
 ### X11
-- i3wm
 - brightnessctl
-- i3lock-color
 - urxvt (rxvt-unicode)
 - polybar
 - rofi
@@ -14,6 +12,7 @@
 - PulseAudio
 ### Wayland
 - SDDM
+- rofi-wayland
 - Sway
 - Swaybg
 - foot
