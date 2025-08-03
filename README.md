@@ -17,7 +17,6 @@
 - Swaybg
 - foot
 - waybar
-- Cava
 - Hyprland
 - Hyprlock
 - Hypridle
