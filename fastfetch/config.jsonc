@@ -45,7 +45,7 @@
         {
             "type": "custom",
             "key": " \udb80\udd42",
-            "format": "Choose your weapon. Time to go."
+            "format": "Choose your weapon, time to go."
         },
 
         "break",
@@ -119,7 +119,8 @@
 
         {
             "type": "disk",
-            "key": " Disk"
+            "key": " Disk",
+            "format": "{size-used} / {size-total} - {9}"
         },
 
         {
