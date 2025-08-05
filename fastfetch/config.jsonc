@@ -1,22 +1,21 @@
 {
-    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
 
     "logo": {
       //Use chafa for out.sixel >>   chafa -s WxH path/to/image > out.sixel
       "type": "raw",
       "source": "/home/$USER/out.sixel",
-      "width": 35,
+      "width": 38,//35,
       "padding": {
-          "top": 2,
+          "top": 3,
           "left": 2,
-          "right": 1
+          "right": 0
       }
       
     },
     "display": {
       "separator": " ",
       "color": {
-          "keys": "cyan"
+          "keys": "#c43333"
       }
     },
 
@@ -37,7 +36,7 @@
 
         {
             "type": "custom",
-            "key": "                   Science Team",
+            "key": "                    Overwatch",
             "format": ""
         },
 
@@ -46,7 +45,7 @@
         {
             "type": "custom",
             "key": " \udb80\udd42",
-            "format": "Working to make a better tomorrow for all mankind."
+            "format": "Choose your weapon. Time to go."
         },
 
         "break",
@@ -55,7 +54,7 @@
             "type": "command",
             "key": " ",
             "text": "printf '\uf017 %s %s                 ➟ %s@%s' $(date +%H:%M:%S) $(date +%Y-%m-%d) $(whoami) $(hostnamectl hostname)",
-            "format": "{##13c299} {result}"
+            "format": "{##c43333} {result}"
         },
 
         {
@@ -105,7 +104,7 @@
 
         {
             "type": "wm",
-            "key": " WM"
+            "key": " WM/DE"
         },
 
         {
@@ -133,17 +132,9 @@
             "format": "\u001b[90m└───────────────────────────────────────────────────┘"
         },
 
-        /*
-        {
-            "type": "colors",
-            "paddingLeft": 2,
-            "symbol": "circle"
-        },
-        */
-
         {
             "type": "custom",
-            "format": "                      \u001b[90m\udb80\udca9 Black Mesa Research Facility"
+            "format": "                          \u001b[90mThe Combine Overwatch - CMb"
         }
 
     ]
