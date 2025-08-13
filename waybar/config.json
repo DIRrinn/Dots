@@ -5,8 +5,7 @@
      "height": 25, // Waybar height (to be removed for auto height)
      "spacing": 0, // Gaps between modules (4px)
      "modules-left": [
-        "hyprland/workspaces",
-        "custom/uptime"
+        "hyprland/workspaces"
     ],
     "modules-center": [
         "hyprland/window"
@@ -21,6 +20,7 @@
         "clock",
         "tray"
     ],
+
 
    "hyprland/workspaces": {
        "disable-scroll": true,
@@ -66,8 +66,8 @@
     "pulseaudio": {
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format-bluetooth-muted": "{icon} {format_source}",
+        "format-muted": "X {format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
