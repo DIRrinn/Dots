@@ -10,13 +10,14 @@
 @define-color black_blue        #020305;
 @define-color dark_blue         #0f1c3b;
 @define-color blue              #0b2259;
+@define-color red               #c43333;
 
 /*
           VARIABLES
 */
-@define-color exclsv           alpha(@white_blue, 0.9);
-@define-color default          @light_blue;
-@define-color dark             @black_blue;
+@define-color exclsv           @red;        /*alpha(@white_blue, 0.9);*/
+@define-color default          @white;      /*@light_blue;*/
+@define-color dark             @dark_grey;  /*@black_blue;*/
 
 * {
     border: 0px;
@@ -31,8 +32,9 @@ window#waybar {
     margin: 2px;
     border-radius: 8px;
     background: transparent;
-    /*border: 2px solid @dark;
-    background: alpha(@light_blue, 0.7);*/
+    /* default */
+    border: 2px solid @dark;
+    background: alpha(@dark_grey, 0.7);
 }
 
 
@@ -48,9 +50,9 @@ window#waybar {
     background: transparent
 }
 .modules-right {
-    border-radius: 8px;
+    border-radius: 0px; /*8px;*/
     border: 0px;
-    background: alpha(@dark, 0.7);
+    /*background: alpha(@dark, 0.7);*/
 }
 
 #workspaces button {
@@ -59,7 +61,7 @@ window#waybar {
     border-radius: 0;
 }
 
-#workspaces button.focused {
+#workspaces button.active {
     color: @exclsv;
 }
 #workspaces button:hover {
