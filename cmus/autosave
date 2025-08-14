@@ -1,8 +1,8 @@
-set aaa_mode=all
-set altformat_current= %F
-set altformat_playlist= %F%= %d
-set altformat_title=%F
-set altformat_trackwin= %F%= %d
+set aaa_mode=album
+set altformat_current= %F 
+set altformat_playlist= %f%= %d %{?X!=0?%3X ?    }
+set altformat_title=%f
+set altformat_trackwin= %f%= %d 
 set auto_expand_albums_follow=true
 set auto_expand_albums_search=true
 set auto_expand_albums_selcur=true
@@ -16,31 +16,31 @@ set color_cmdline_fg=default
 set color_cur_sel_attr=default
 set color_error=red
 set color_info=white
-set color_separator=gray
+set color_separator=white
 set color_statusline_attr=default
 set color_statusline_bg=gray
 set color_statusline_fg=black
 set color_statusline_progress_attr=default
-set color_statusline_progress_bg=gray
+set color_statusline_progress_bg=red
 set color_statusline_progress_fg=white
-set color_titleline_attr=default
-set color_titleline_bg=black
+set color_titleline_attr=bold
+set color_titleline_bg=cyan
 set color_titleline_fg=white
 set color_trackwin_album_attr=bold
-set color_trackwin_album_bg=default
-set color_trackwin_album_fg=default
+set color_trackwin_album_bg=black
+set color_trackwin_album_fg=white
 set color_win_attr=default
-set color_win_bg=default
+set color_win_bg=black
 set color_win_cur=red
 set color_win_cur_attr=default
 set color_win_cur_sel_attr=default
-set color_win_cur_sel_bg=white
-set color_win_cur_sel_fg=red
+set color_win_cur_sel_bg=red
+set color_win_cur_sel_fg=black
 set color_win_dir=red
 set color_win_fg=default
 set color_win_inactive_cur_sel_attr=default
 set color_win_inactive_cur_sel_bg=gray
-set color_win_inactive_cur_sel_fg=red
+set color_win_inactive_cur_sel_fg=black
 set color_win_inactive_sel_attr=default
 set color_win_inactive_sel_bg=gray
 set color_win_inactive_sel_fg=black
@@ -48,8 +48,8 @@ set color_win_sel_attr=default
 set color_win_sel_bg=red
 set color_win_sel_fg=white
 set color_win_title_attr=default
-set color_win_title_bg=darkgray
-set color_win_title_fg=white
+set color_win_title_bg=cyan
+set color_win_title_fg=black
 set confirm_run=true
 set continue=true
 set continue_album=true
@@ -59,7 +59,7 @@ set dsp.alsa.device=
 set dsp.jack.resampling_quality=2
 set dsp.jack.server_name=
 set dsp.oss.device=
-set follow=true
+set follow=false
 set format_clipped_text=…
 set format_current= %a - %l%! - %n. %t%= %y 
 set format_heading_album=%a - %l%= %y %{duration}
@@ -94,13 +94,13 @@ set mouse=false
 set mpris=true
 set output_plugin=pulse
 set passwd=
-set pause_on_output_change=true
+set pause_on_output_change=false
 set pl_env_vars=
 set pl_sort=
 set play_library=true
-set play_sorted=true
+set play_sorted=false
 set progress_bar=line
-set repeat=true
+set repeat=false
 set repeat_current=false
 set replaygain=disabled
 set replaygain_limit=true
@@ -112,7 +112,7 @@ set search_resets_position=true
 set set_term_title=true
 set show_all_tracks=true
 set show_current_bitrate=false
-set show_hidden=true
+set show_hidden=false
 set show_playback_position=true
 set show_remaining_time=false
 set shuffle=tracks
@@ -225,6 +225,6 @@ fset classical=genre="Classical"
 fset missing-tag=!stream&(artist=""|album=""|title=""|tracknumber=-1|date=-1)
 fset mp3=filename="*.mp3"
 fset ogg=filename="*.ogg"
-fset ogg-or-mp3=mp3
+fset ogg-or-mp3=ogg|mp3
 fset unheard=play_count=0
 factivate
