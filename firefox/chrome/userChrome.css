@@ -21,6 +21,7 @@
   --text-dark: var(--dark-color);
   --text-light: var(--light-color);
   --accent: var(--red);
+
 }
 
 
@@ -35,6 +36,15 @@
   --navbarWidth     : 40vw; /* Set width of navbar. Use px for a fixed width 
                                 or vw for a percentage of your window. */
   --animationSpeed  : 0.5s;
+
+  --uc-urlbar-width: clamp(250px, 50vw, 600px);
+  --uc-active-tab-width:   clamp( 50px, 18vw, 220px);
+  --uc-inactive-tab-width: clamp( 50px, 15vw, 200px);
+
+  --show-tab-close-button: none;
+  --show-tab-close-button-hover: -moz-inline-box;
+  --container-tabs-indicator-margin: 0px;
+
 }
 
 
@@ -49,6 +59,8 @@
 #urlbar-container {
   min-width   : 0px !important;
 }
+
+#urlbar * { box-shadow: none !important; }
 
 :root[uidensity="compact"] #nav-bar {
   margin-top  : -37px !important;
@@ -86,6 +98,7 @@
 #nav-bar {
   background  : none !important;
   box-shadow  : none !important;
+
 }
 
 #navigator-toolbox {
@@ -158,9 +171,9 @@ tab[selected="true"] .tab-background {
   background: rgba(var(--accent), 1) !important;
 }
 
-.tabbrowser-tab:not([selected]):hover > .tab-stack > .tab-background {
-  background-color: rgba(var(--accent), 0.7) !important;
-}
+.tabbrowser-tab:not([pinned]) .tab-close-button { display: var(--show-tab-close-button) !important; }
+.tabbrowser-tab:not([pinned]):hover .tab-close-button { display: var(--show-tab-close-button-hover) !important }
+
 
 .tab-line {
   height: 0px !important;
