@@ -213,7 +213,8 @@ source = auto
 # a terminal that can change color definitions such as Gnome-terminal or rxvt.
 # default is to keep current terminal color
 background = default
-foreground = '#f9e2af'
+foreground = '#c43333'
+
 
 # SDL and sdl_glsl only support hex code colors, these are the default:
 ; background = '#111111'
@@ -225,10 +226,6 @@ foreground = '#f9e2af'
 # Higher values means smoother, but less precise. 0 to disable.
 # DEPRECATED as of 0.8.0, use noise_reduction instead
 ; integral = 77
-
-# Disables or enables the so-called "Monstercat smoothing" with or without "waves". Set to 0 to disable.
-; monstercat = 0
-; waves = 0
 
 # Set gravity percentage for "drop off". Higher values means bars will drop faster.
 # Accepts only non-negative values. 50 means half gravity, 200 means double. Set to 0 to disable "drop off".
@@ -255,4 +252,4 @@ foreground = '#f9e2af'
 ; 2 = 1
 ; 3 = 1 # midtone
 ; 4 = 1
-;
+; 5 = 1 # treble
