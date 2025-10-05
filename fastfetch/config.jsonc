@@ -3,7 +3,7 @@
     "logo": {
       //Use chafa for out.sixel >>   chafa -s WxH path/to/image > out.sixel
       "type": "raw",
-      "source": "/home/$USER/out.sixel",
+      "source": "/home/$USER/.out.sixel",
       "width": 38,//35,
       "padding": {
           "top": 3,
@@ -36,7 +36,7 @@
 
         {
             "type": "custom",
-            "key": "                    Overwatch",
+            "key": "                     Observer",
             "format": ""
         },
 
@@ -135,7 +135,7 @@
 
         {
             "type": "custom",
-            "format": "                          \u001b[90mThe Combine Overwatch - CMb"
+            "format": "                                            \u001b[90mS.T.O.P."
         }
 
     ]
