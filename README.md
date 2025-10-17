@@ -20,7 +20,8 @@
 - Hyprland
 - Hyprlock
 - Hypridle
-- Quickshell
+- Quickshell (delete this)
+- Grim
 
 **X packages can also be running on Wayland using Xwayland**
 ___
