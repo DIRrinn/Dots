@@ -1,69 +1,35 @@
-* {
-    border: 0;
-    margin: 0;
-    padding: 2;
-    spacing: 0;
-
-    bg: #222222;
-    black: #111111;
-    fg: #dddddd;
-    red: #c43333;
-
-    background-color: @bg;
-    text-color: @fg;
+configuration {
+modes: "drun,run";
+font: "Trebuchet MS 10";
+location: 0;
+yoffset: 0;
+xoffset: 0;
+fixed-num-lines: true;
+show-icons: false;
+terminal: "rofi-sensible-terminal";
+run-command: "{cmd}";
+run-list-command: "";
+run-shell-command: "{terminal} -e {cmd}";
+window-command: "wmctrl -i -R {window}";
+window-match-fields: "all";
+drun-match-fields: "name,generic,exec,categories,keywords";
+drun-show-actions: false;
+drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
+drun-url-launcher: "xdg-open";
+sort: false;
+cycle: false;
+sidebar-mode: false;
+eh: 1;
+auto-select: false;
+display-window: "window";
+display-run: " ";
+display-ssh: "ssh";
+display-drun: "󰣇 ";
 }
 
-window {
-    location:   center;
-    width: 480px;
-    border: 4px;
-    border-color: @black;
+timeout {
+      action: "kb-cancel";
+      delay:  0;
 }
 
-inputbar, prompt, entry {
-    border: 0px 0px 0px 0px;
-    border-color: @black;
-    padding: 3px 3px;
-    background-color: @bg;
-}
-
-scrollbar {
-    handle-color: @red;
-    border: 0px;
-    border-color: @black;
-    handle-width: 5px;
-    padding: 4;
-}
-
-element {
-    background-color: @bg;
-    border: 2px;
-    border-color: @bg;
-    padding: 2px;
-}
-
-element selected normal {
-    background-color: @red;
-}
-
-listview {
-    scrollbar: false;
-    lines: 8;
-    fixed-height: false;
-}
-
-element-text, element-icon {
-    highlight: none;
-    vertical-align: 0.5;
-    horizontal-align : 0.0;
-    background-color: inherit;
-}
-
-entry {
-    placeholder: "Search";
-    placeholder-color: #888888;
-}
-
-element-text selected {
-    text-color: @fg;
-}
+@theme "reality"
