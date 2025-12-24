@@ -3,7 +3,7 @@
     "logo": {
       //Use chafa for out.sixel >>   chafa -s WxH path/to/image > out.sixel
       "type": "raw",
-      "source": "/home/$USER/.out.sixel",
+      "source": "/home/dirrinn/.out.sixel",
       "width": 38,//35,
       "padding": {
           "top": 3,
@@ -30,8 +30,8 @@
 
         {
             "type": "custom",
-            "key": "                 ☣",
-            "format": "Richard Stein"
+            "key": "                    ☣",
+            "format": "DIRrinn"
         },
 
         {
@@ -45,7 +45,7 @@
         {
             "type": "custom",
             "key": " \udb80\udd42",
-            "format": "Choose your weapon, time to go."
+            "format": "Я легенда, а не хайп."
         },
 
         "break",
@@ -135,7 +135,7 @@
 
         {
             "type": "custom",
-            "format": "                                            \u001b[90mS.T.O.P."
+            "format": "                                            \u001b[90mDIRrinn"
         }
 
     ]
