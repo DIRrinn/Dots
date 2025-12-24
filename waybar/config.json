@@ -1,9 +1,8 @@
-// -*- mode: jsonc -*-
 {
-     "layer": "bottom", // Waybar at top layer
-     "position": "top", // Waybar position (top|bottom|left|right)
-     "height": 25, // Waybar height (to be removed for auto height)
-     "spacing": 0, // Gaps between modules (4px)
+     "layer": "bottom",
+     "position": "top",
+     "height": 25,
+     "spacing": 0,
      "modules-left": [
         "hyprland/workspaces"
     ],
@@ -15,7 +14,8 @@
         "network",
         "cpu",
         "memory",
-        //"backlight",
+        "backlight",
+	    "battery",
         "hyprland/language",
         "clock",
         "tray"
@@ -54,7 +54,7 @@
     },
 
     "network": {
-        //"interface": "wlp2*", // (Optional) To force the use of this interface
+        // "interface": "wlp2*",
         "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
@@ -72,20 +72,39 @@
         "format-source-muted": "",
         "format-icons": {
             "headphone": "󰋋",
-            "hands-free": "",
-            "headset": "",
+            "hands-free": ".",
+            "headset": ".",
             "phone": "",
             "portable": "",
             "car": "",
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
-    }
+    },
 
-    /*
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ◉",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+
+
     "custom/uptime": {
         "format": "> {text}",
         "exec": "uptime -p",
         "interval": 60
-    }*/
+    }
 }
