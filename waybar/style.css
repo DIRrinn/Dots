@@ -19,7 +19,7 @@
     border-radius: 0;
     font-family: "Trebuchet MS" ;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 14px;
     min-height: 10px;
 }
 
@@ -87,6 +87,14 @@ window#waybar {
 }
 
 #backlight {
+    color: @default;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: transparent;
+}
+
+#battery {
     color: @default;
     margin-left: 8px;
     padding-left: 10px;
