@@ -14,9 +14,10 @@
 }
 
 window {
-    location:   center;
+    location:   east;
     width: 480px;
     border: 4px;
+    border-radius: 10px;
     border-color: @black;
 }
 
