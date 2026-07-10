@@ -1,18 +1,7 @@
-/*
-            COLORS
-*/
-@define-color dark_grey         #1d2021;
-@define-color light_grey        #58595c;
-@define-color white             #ffffff;
-@define-color red               #c43333;
-
-/*
-          VARIABLES
-*/
-@define-color exclsv           @red;
-@define-color default          @white;
-@define-color dark             @dark_grey;
-@define-color light            @light_grey;
+@import "tokens/colors.css";
+@import "tokens/slider.css";
+@import "tokens/notification.css";
+/*@import "tokens/workspaces.css";*/
 
 * {
     border: 0px;
@@ -42,7 +31,7 @@ window#waybar {
 .modules-left {
     border-radius:3px;
     border: 0px;
-    background: transparent
+    background: transparent;
 }
 .modules-right {
     border-radius: 0px; /*8px;*/
@@ -80,9 +69,7 @@ window#waybar {
 
 #pulseaudio {
     color: @default;
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 5px;
     background: transparent;
 }
 
@@ -139,15 +126,4 @@ window#waybar {
     padding-left: 2px;
     padding-right: 10px;
     background: transparent;
-}
-
-#custom-media {
-    margin-left: 8px;
-    padding-left: 10px;
-    padding-right: 10px;
-    background: transparent;
-}
-
-#custom-uptime {
-    color: @exclsv
 }
