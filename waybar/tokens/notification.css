@@ -1,0 +1,11 @@
+@import "colors.css";
+
+#custom-notification {
+    background-color: transparent;
+    color: @red;
+    border-radius: 15px; /* [TR] Yumuşak kavisli köşeler / [EN] Soft curved corners */
+    padding: 0px 10px;
+    margin: 5px 2px;
+    border: 0px solid @red;
+    transition: all 0.3s ease
+}
