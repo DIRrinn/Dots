@@ -1,0 +1,12 @@
+{
+    "custom/media": {
+        "format": "{}", 
+        "max-length": 40,
+        "interval": 1,
+        "exec": "echo $(playerctl metadata --format '♪ [{{uc(playerName)}}] {{ artist }} - {{ title }}')",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous",
+        "escape": true
+    }
+}

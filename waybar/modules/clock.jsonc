@@ -1,0 +1,9 @@
+{
+  "clock": {
+    "timezone": "Asia/Novosibirsk",
+    "locale": "ru_RU.UTF-8",
+    "format": "  {:%H:%M}",
+    "format-alt": "󰃱 <span size='11pt'>{:%d %B %Y}</span>",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>"
+  }
+}
