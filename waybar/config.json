@@ -1,110 +1,45 @@
+/* most of the config's was taken here
+https://github.com/haikal-hakim/athena.git
+https://github.com/L3yzs/By-LeyzS-Arch-Hyprland-Dotfiles.git
+*/
+
 {
      "layer": "bottom",
      "position": "top",
      "height": 25,
      "spacing": 0,
+     "include": [
+         "./modules/groups.jsonc",
+         "./modules/audio.jsonc",
+         "./modules/clock.jsonc",
+         "./modules/network.jsonc",
+         "./modules/workspaces.jsonc",
+         "./modules/memory.jsonc",
+         "./modules/battery.jsonc",
+         "./modules/notification.jsonc",
+         "./modules/media.jsonc",
+         "./modules/language.jsonc"
+     ],
      "modules-left": [
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "custom/media"
     ],
     "modules-center": [
         "hyprland/window"
     ],
     "modules-right": [
-        "pulseaudio",
+        "group/audio",
         "network",
-        "cpu",
         "memory",
-        "backlight",
 	    "battery",
         "hyprland/language",
         "clock",
+        "custom/notification",
         "tray"
     ],
 
-
-   "hyprland/workspaces": {
-       "disable-scroll": true,
-       "all-outputs": true,
-       "warp-on-scroll": false,
-       "format": "{name}"
-     },
-
-    "hyprland/language" : {
-        "on-click": "hyprctl switchxkblayout current next"
-    },
-
     "tray": {
         "spacing": 10
-    },
-    "clock": {
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
-    },
-    "cpu": {
-        "format": "{usage}% ",
-        "tooltip": false
-    },
-    "memory": {
-        "format": "{}% "
-    },
-
-    "backlight": {
-        "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
-    },
-
-    "network": {
-        // "interface": "wlp2*",
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
-    },
-
-    "pulseaudio": {
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": "{icon} {format_source}",
-        "format-muted": "󰟎 {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "󰋋",
-            "hands-free": ".",
-            "headset": ".",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol"
-    },
-
-    "battery": {
-        "states": {
-            // "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{capacity}% {icon}",
-        "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ◉",
-        "format-plugged": "{capacity}% ",
-        "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
-    },
-    "battery#bat2": {
-        "bat": "BAT2"
-    },
-
-
-    "custom/uptime": {
-        "format": "> {text}",
-        "exec": "uptime -p",
-        "interval": 60
     }
+
 }
